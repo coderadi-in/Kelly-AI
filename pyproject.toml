@@ -1,0 +1,23 @@
+[project]
+name = "kelly-ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "appopener>=1.7",
+    "dotenv>=0.9.9",
+    "openai>=2.45.0",
+    "openai-whisper>=20250625",
+    "pyaudio>=0.2.14",
+    "pyautogui>=0.9.54",
+    "pywin32>=312",
+    "scipy>=1.17.1",
+    "sounddevice>=0.5.5",
+    "soundfile>=0.14.0",
+    "speechrecognition>=3.17.0",
+    "torch>=2.13.0",
+]
+
+[tool.uv.sources]
+openai-whisper = { git = "https://github.com/openai/whisper.git" }

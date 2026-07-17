@@ -47,3 +47,14 @@ class DeskAgent:
 
         elif (action == 'open_site'):
             self.web_tool.open_site(data)
+
+        elif (action == 'type_text'):
+            self.desk_tool.write_text(data)
+
+        elif (action == 'press_key'):
+            if ('+' not in data):
+                self.desk_tool.press_key(data)
+                
+            else:
+                combs = data.split("+")
+                self.desk_tool.press_key_comb(*combs)

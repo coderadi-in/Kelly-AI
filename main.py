@@ -34,14 +34,14 @@ print("Press ctrl + c to exit.\n")
 while (True):
 
     try:
-        # 1. Listen for user input
-        print("Speak...")
-        audio = stt.listen()
-        transcription = stt.transcribe(audio)
-        print("You: " + transcription)
-
         # # 1. Listen for user input
-        # text = input("You: ")
+        # print("Speak...")
+        # audio = stt.listen()
+        # transcription = stt.transcribe(audio)
+        # print("You: " + transcription)
+
+        # 1. Listen for user input
+        transcription = input("You: ")
 
         # 2. Generate AI response
         response = generate_response(PROMPT, transcription)
